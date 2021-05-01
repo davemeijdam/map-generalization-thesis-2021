@@ -30,4 +30,6 @@ def my_function_name():
     pass
 
 file_name.py
+
+here_is_the_object = MyClass()
 ```
