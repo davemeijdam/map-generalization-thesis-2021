@@ -21,3 +21,13 @@ Use `utils/datasets.py` for this. create the file and add a content to it.
 What's loader? `torch.utils.data.DataLoader`
 4. [It's optional] Read about Graph Neural Networks (GNNs) 
 https://tkipf.github.io/graph-convolutional-networks/
+
+```python
+class MyClass:
+    pass
+
+def my_function_name():
+    pass
+
+file_name.py
+```
