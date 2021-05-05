@@ -11,16 +11,20 @@ https://github.com/pytorch/
     import torch
     torch.cuda.is_available()
     ```
-1. [May be you can do it while you are waiting for the answer] Achieve at least 99.2 on MNIST. Do everything in a notebook.
-    - take a look at at least 1 tutorial.
-    - take a look at https://github.com/pytorch/examples/blob/master/mnist/main.py
-2. Create a dataset for the provided data.
+1 Read about BatchNorm, try to improve your code with `nn.BatchNorm2d`
+2 Take a look at the MNIST Polygon dataset. 
+    - try to make the dataset to return tensors of exactly the same shape
+    - try to use a fully-connected network.
+    - try to convert a 1-dimensional index into a 2-dimensional ones. 31 -> (1, 3) = (31 // 28, 31 % 28)
+    - Then think about symmetries of the data. What can be channged in the input s.t. the output stays exactly the same.
+3. Create a dataset for the provided data.
 Use `utils/datasets.py` for this. create the file and add a content to it. 
     - Read about pytorch custom datasets. Take a look at `torchvision/datasets/mnist.py`
-3. Create a loader for the dataset. add it to `utils/loaders.py`
+4. Create a loader for the dataset. add it to `utils/loaders.py`
 What's loader? `torch.utils.data.DataLoader`
-4. [It's optional] Read about Graph Neural Networks (GNNs) 
+5. [It's optional] Read about Graph Neural Networks (GNNs) 
 https://tkipf.github.io/graph-convolutional-networks/
+! Share the Dutch paper with Ivan
 
 ```python
 class MyClass:
